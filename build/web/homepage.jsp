@@ -27,7 +27,7 @@ and open the template in the editor.
         <link rel="stylesheet" href="CSS/about.css" />
 
         <link rel="stylesheet" href="CSS/aquaknow.css">
-        <link rel="stylesheet" href="CSS/fishtank.css">
+
         <link rel="stylesheet" href="CSS/style.css" />
     </head>
 
@@ -317,7 +317,7 @@ and open the template in the editor.
                         <img src="<%= item.getItemImageData()%>" alt="Fish here">
                         <div class="btnitem">
                             <h1><%=item.getItemName()%> <p class="price"><%=item.getItemPrice()%> </p></h1>
-                            
+
                             <div class="btnPurchase">
                                 <input type="button" class="btn btn-primary mr-2" value="Add to cart">
                                 <input type="button" class="btn btn-outline-primary " value="Buy now">

@@ -14,6 +14,8 @@ import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
+import dao.ItemDB;
+
 /**
  *
  * @author LEQUANGHUY
@@ -40,6 +42,9 @@ public class Items implements Serializable {
     @Basic(optional = false)
     @Column(name = "itemImageName")
     private String itemImageName;
+    @Basic(optional = false)
+    @Column(name = "quantity")
+    private int itemQuantity;
 
     public Items() {
     }
@@ -96,7 +101,26 @@ public class Items implements Serializable {
         this.itemImageName = itemImageName;
     }
 
+    public int getItemQuantity() {
+        return itemQuantity;
+    }
+
+    public void setItemQuantity(int itemQuantity) {
+        this.itemQuantity = itemQuantity;
+    }
+
+    public void decQuantity(int num) {
+        this.itemQuantity -= num;
+        ItemDB.updateItem(this);
+    }
+
+    public void incQuantity(int num) {
+        this.itemQuantity += num;
+        ItemDB.updateItem(this);
+    }
+
     @Override
+
     public int hashCode() {
         int hash = 0;
         hash += (itemID != null ? itemID.hashCode() : 0);
