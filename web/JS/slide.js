@@ -2,6 +2,10 @@ var slideIndex = 0;
 showSlides();
 
 function showSlides() {
+<<<<<<< HEAD
+=======
+  
+>>>>>>> ceee322c1c3dd57d42a0e328b5cf600a588b9fed
   var i;
   var slides1 = document.getElementsByClassName("mySlides-1");
   var slides2 = document.getElementsByClassName("mySlides-2");

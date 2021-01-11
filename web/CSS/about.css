@@ -147,6 +147,10 @@ ul.w3_short li a {
 }
 .abicon ul {
   list-style: none;
+<<<<<<< HEAD
+=======
+  margin: auto;
+>>>>>>> ceee322c1c3dd57d42a0e328b5cf600a588b9fed
 }
 .abicon ul li {
   width: 45px;

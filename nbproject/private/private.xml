@@ -2,6 +2,7 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+<<<<<<< HEAD
         <group>
             <file>file:/C:/Users/Dell/OneDrive/Desktop/fishshop/web/WEB-INF/web.xml</file>
             <file>file:/C:/Users/Dell/OneDrive/Desktop/fishshop/web/CSS/style.css</file>
@@ -9,5 +10,15 @@
             <file>file:/C:/Users/Dell/OneDrive/Desktop/fishshop/src/java/model/Items.java</file>
             <file>file:/C:/Users/Dell/OneDrive/Desktop/fishshop/web/homepage.html</file>
         </group>
+=======
+<<<<<<< HEAD
+        <group/>
+=======
+        <group>
+            <file>file:/C:/Users/Dell/OneDrive/Desktop/fishshop/web/CSS/style.css</file>
+            <file>file:/C:/Users/Dell/OneDrive/Desktop/fishshop/web/homepage.jsp</file>
+        </group>
+>>>>>>> 216c72d44088304b0381e33af4a5489e361b2bd2
+>>>>>>> ceee322c1c3dd57d42a0e328b5cf600a588b9fed
     </open-files>
 </project-private>
