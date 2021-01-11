@@ -502,7 +502,8 @@ li {
 .abseccond {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  width: 100%;
   padding: 0 100px;
 }
 .abicon ul {
@@ -565,9 +566,6 @@ li {
   width: 250px;
   height: 300px;
   perspective: 1000px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .flip-card-inner {
