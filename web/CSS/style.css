@@ -159,7 +159,7 @@ li {
   font-size: 20px;
   color: black;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 .items-container .items .btnitem .price {
   color: rgb(223, 28, 28);
@@ -497,9 +497,6 @@ li {
   /*Set the size of the magnifier glass:*/
   width: 200px;
   height: 200px;
-}
-.row {
-  padding-bottom: 20px;
 }
 /*footer them*/
 .brandft {

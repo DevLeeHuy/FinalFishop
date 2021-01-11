@@ -1,5 +1,5 @@
 html {
-/*  scroll-behavior: smooth;*/
+  /*  scroll-behavior: smooth;*/
 }
 
 * {
@@ -12,12 +12,11 @@ html {
 h2 {
   text-align: center;
   font-weight: bold;
-margin-top:0px;
+  margin-top: 0px;
 }
 body {
   width: 100%;
 }
-
 
 a {
   text-decoration: none;
@@ -145,7 +144,7 @@ li {
   height: 350px;
   width: 20%;
   min-width: 250px;
-
+  box-shadow: 0 1px 5px 1px #e4e4e4;
   margin: 30px;
   text-align: center;
   border-radius: 5px;
@@ -153,12 +152,14 @@ li {
   overflow: hidden;
 }
 .items-container .items img {
-  height: 90%;
+  height: 75%;
   width: 100%;
 }
 .items-container .items .btnitem h1 {
   font-size: 20px;
   color: black;
+  display: flex;
+  justify-content: center;
 }
 .items-container .items .btnitem .price {
   color: rgb(223, 28, 28);
@@ -167,7 +168,7 @@ li {
 .items-container .items .btnitem {
   position: absolute;
   width: 100%;
-  bottom: 0px;
+  bottom: 0;
 }
 .items-container .items .btnPurchase {
   border: none;
@@ -185,7 +186,7 @@ li {
   border-radius: 5px;
 }
 .items:hover {
-  box-shadow: 0 1px 5px 4px #e4e4e4;
+  box-shadow: 0 1px 5px 5px #e4e4e4;
   transform: translateY(-2px);
   transition: 0.5s;
 }
@@ -240,7 +241,7 @@ li {
 }
 .filter-mobile h1 {
   font-weight: bolder;
-  color: #0066FF;
+  color: white;
 }
 .closeFilterMobile {
   font-size: 1.4rem;
@@ -346,12 +347,12 @@ li {
 
 /* product-cart-section */
 .product-card {
-  margin-top:20px;  
+  margin-top: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-width: 400px;
-height:500px;
+  width: 400px;
+  height: 500px;
   text-align: center;
-  position:relative;
+  position: relative;
 }
 
 .price {
@@ -363,9 +364,9 @@ height:500px;
   height: 50%;
 }
 .product-card button {
-  position:absolute;
-  bottom:0px;
-  left:0px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
   border: none;
   outline: 0;
   padding: 12px;
@@ -381,11 +382,11 @@ height:500px;
   opacity: 0.7;
 }
 .product-card-section {
-/*<<<<<<< HEAD*/
+  /*<<<<<<< HEAD*/
   background-color: rgba(94, 170, 241, 0.5);
   padding-bottom: 50px;
-  padding-top:50px;
-/*=======
+  padding-top: 50px;
+  /*=======
   background-color: rgba(201, 157, 182, 0.5);
   padding-bottom: 20px;
 >>>>>>> 0dcc80dc7fa2225b97d73ab9ab6afe18371aa2b8*/
@@ -497,11 +498,7 @@ height:500px;
   width: 200px;
   height: 200px;
 }
-.row {
-  padding-bottom: 20px;
-}
-/*footer them*/   
+/*footer them*/
 .brandft {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
-

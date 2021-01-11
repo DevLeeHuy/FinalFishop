@@ -10,7 +10,7 @@ $(".category-tag").click(function (event) {
 // END Left Column
 $(".btnPurchase").slideUp();
 $(".items").hover(function () {
-  $(this).find(".btnPurchase").stop(true,true).slideToggle();
+  $(this).find(".btnPurchase").stop(true, true).slideToggle();
 });
 //  filter mobile
 let fiMo = $(".filter-mobile");
@@ -24,7 +24,7 @@ $(".closeFilterMobile").click(function () {
 
 $(window).resize(() => {
   console.log($(window).width());
-  if ($(window).width() >  1440) {
+  if ($(window).width() > 1440) {
     fiMo.fadeOut();
   }
 });
@@ -35,7 +35,6 @@ $(window).resize(() => {
 //end item hover
 
 magnify("myimage", 2);
-
 
 function Plus() {
   var i = document.getElementById("quantity");
@@ -130,6 +129,3 @@ function MoveOn() {
   var glass = document.getElementsByClassName("img-magnifier-glass")[0];
   glass.style.display = "block";
 }
-
-
-
