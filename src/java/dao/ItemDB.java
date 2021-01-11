@@ -28,7 +28,6 @@ public class ItemDB {
         return listItems;
 
     }
-<<<<<<< HEAD
 
     public static void addItem(Items item) {
         EntityManagerFactory factory = Persistence.createEntityManagerFactory("item");
@@ -44,6 +43,4 @@ public class ItemDB {
 
     }
 
-=======
->>>>>>> ceee322c1c3dd57d42a0e328b5cf600a588b9fed
 }

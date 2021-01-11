@@ -14,10 +14,7 @@
         </session-timeout>
     </session-config>
     <welcome-file-list>
-<<<<<<< HEAD
-        <welcome-file>homepage.html</welcome-file>
-=======
+
         <welcome-file>homepage.jsp</welcome-file>
->>>>>>> ceee322c1c3dd57d42a0e328b5cf600a588b9fed
     </welcome-file-list>
 </web-app>

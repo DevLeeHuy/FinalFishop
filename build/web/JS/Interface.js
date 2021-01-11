@@ -10,11 +10,7 @@ $(".category-tag").click(function (event) {
 // END Left Column
 $(".btnPurchase").slideUp();
 $(".items").hover(function () {
-<<<<<<< HEAD
-  $(this).find(".btnPurchase").stop(true, true).slideToggle();
-=======
   $(this).find(".btnPurchase").stop(true,true).slideToggle();
->>>>>>> ceee322c1c3dd57d42a0e328b5cf600a588b9fed
 });
 //  filter mobile
 let fiMo = $(".filter-mobile");
@@ -28,11 +24,7 @@ $(".closeFilterMobile").click(function () {
 
 $(window).resize(() => {
   console.log($(window).width());
-<<<<<<< HEAD
-  if ($(window).width() > 1440) {
-=======
   if ($(window).width() >  1440) {
->>>>>>> ceee322c1c3dd57d42a0e328b5cf600a588b9fed
     fiMo.fadeOut();
   }
 });
@@ -44,10 +36,6 @@ $(window).resize(() => {
 
 magnify("myimage", 2);
 
-<<<<<<< HEAD
-=======
-
->>>>>>> ceee322c1c3dd57d42a0e328b5cf600a588b9fed
 function Plus() {
   var i = document.getElementById("quantity");
   i.value++;
@@ -141,9 +129,6 @@ function MoveOn() {
   var glass = document.getElementsByClassName("img-magnifier-glass")[0];
   glass.style.display = "block";
 }
-<<<<<<< HEAD
-=======
 
 
 
->>>>>>> ceee322c1c3dd57d42a0e328b5cf600a588b9fed

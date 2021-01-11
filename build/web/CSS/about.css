@@ -147,6 +147,7 @@ ul.w3_short li a {
 }
 .abicon ul {
   list-style: none;
+  margin: auto;
 }
 .abicon ul li {
   width: 45px;
@@ -204,19 +205,19 @@ ul.w3_short li a {
   color: rgb(238, 234, 234);
 }
 .sub-some img {
-    width: 400px; 
+  width: 400px;
 }
-.aaaa{
-    margin-top: 10px;
-}  
-.aaaa .fa{
+.aaaa {
+  margin-top: 10px;
+}
+.aaaa .fa {
   color: coral;
 }
 .footerne {
- background-color: #0277bd;
+  background-color: #0277bd;
 }
 .footerright {
-  background-color:#01579b;
+  background-color: #01579b;
   color: rgb(238, 234, 234);
 }
 
