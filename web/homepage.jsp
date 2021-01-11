@@ -316,8 +316,8 @@ and open the template in the editor.
                     <div class="items">
                         <img src="<%= item.getItemImageData()%>" alt="Fish here">
                         <div class="btnitem">
-                            <h1><%=item.getItemName()%></h1>
-                            <p class="price"><%=item.getItemPrice()%> </p>
+                            <h1><%=item.getItemName()%> <p class="price"><%=item.getItemPrice()%> </p></h1>
+                            
                             <div class="btnPurchase">
                                 <input type="button" class="btn btn-primary mr-2" value="Add to cart">
                                 <input type="button" class="btn btn-outline-primary " value="Buy now">
