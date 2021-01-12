@@ -40,7 +40,23 @@ public class ItemDB {
     }
 
     public static void deleteItem(Items item) {
+        EntityManagerFactory factory = Persistence.createEntityManagerFactory("item");
+        EntityManager entityManager = factory.createEntityManager();
+        EntityTransaction eTrans = entityManager.getTransaction();
+        eTrans.begin();
+        entityManager.remove(item);
+        eTrans.commit();
+        entityManager.close();
+    }
 
+    public static void updateItem(Items item) {
+        EntityManagerFactory factory = Persistence.createEntityManagerFactory("item");
+        EntityManager entityManager = factory.createEntityManager();
+        EntityTransaction eTrans = entityManager.getTransaction();
+        eTrans.begin();
+        entityManager.merge(item);
+        eTrans.commit();
+        entityManager.close();
     }
 
     public static List<Items> Search(String itemName) throws Exception {
