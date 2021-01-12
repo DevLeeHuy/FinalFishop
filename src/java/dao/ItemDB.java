@@ -43,4 +43,26 @@ public class ItemDB {
 
     }
 
+    public static List<Items> Search(String itemName) throws Exception {
+
+        EntityManagerFactory em = Persistence.createEntityManagerFactory("item");
+        EntityManager entityManager = em.createEntityManager();
+        String qString = "SELECT Item FROM Items item "
+                + "WHERE dbo.fuConvertToUnsign1(item.itemName) LIKE N'%'+dbo.fuConvertToUnsign1(:itemName)+'%' ";
+        TypedQuery<Items> q = entityManager.createQuery(qString, Items.class);
+        q.setParameter("itemName", itemName);
+
+        try {
+            List<Items> listItems = (List<Items>) q.getResultList();
+            return listItems;
+
+        } catch (NoResultException e) {
+            return null;
+        } finally {
+            entityManager.close();
+
+        }
+
+    }
+
 }
