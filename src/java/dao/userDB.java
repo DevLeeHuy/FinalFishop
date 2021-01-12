@@ -6,57 +6,59 @@
 package dao;
 
 import java.util.List;
-import javax.persistence.*;
-
-import model.Items;
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
+import javax.persistence.Persistence;
+import javax.persistence.Query;
+import model.Users;
 
 /**
  *
- * @author pc
+ * @author Administrator
  */
-public class ItemDB {
+public class userDB {
 
-    public static List<Items> getAllItems() throws Exception {
+    public static List<Users> getAllUsers() {
 
-        EntityManagerFactory factory = Persistence.createEntityManagerFactory("item");
+        EntityManagerFactory factory = Persistence.createEntityManagerFactory("user");
         EntityManager entityManager = factory.createEntityManager();
-        String sql = "SELECT item  FROM Items item";
+        String sql = "SELECT user  FROM Users user";
         Query query = entityManager.createQuery(sql);
-        List<Items> listItems = (List<Items>) query.getResultList();
+        List<Users> listUsers = (List<Users>) query.getResultList();
         entityManager.close();
 
-        return listItems;
+        return listUsers;
 
     }
 
-    public static void addItem(Items item) {
-        EntityManagerFactory factory = Persistence.createEntityManagerFactory("item");
+    public static void addUser(Users user) {
+        EntityManagerFactory factory = Persistence.createEntityManagerFactory("user");
         EntityManager entityManager = factory.createEntityManager();
         EntityTransaction eTrans = entityManager.getTransaction();
         eTrans.begin();
-        entityManager.persist(item);
+        entityManager.persist(user);
         eTrans.commit();
         entityManager.close();
     }
 
-    public static void deleteItem(Items item) {
-        EntityManagerFactory factory = Persistence.createEntityManagerFactory("item");
+    public static void deleteUser(Users user) {
+        EntityManagerFactory factory = Persistence.createEntityManagerFactory("user");
         EntityManager entityManager = factory.createEntityManager();
         EntityTransaction eTrans = entityManager.getTransaction();
         eTrans.begin();
-        entityManager.remove(item);
+        entityManager.remove(user);
         eTrans.commit();
         entityManager.close();
     }
 
-    public static void updateItem(Items item) {
-        EntityManagerFactory factory = Persistence.createEntityManagerFactory("item");
+    public static void updateUser(Users user) {
+        EntityManagerFactory factory = Persistence.createEntityManagerFactory("user");
         EntityManager entityManager = factory.createEntityManager();
         EntityTransaction eTrans = entityManager.getTransaction();
         eTrans.begin();
-        entityManager.merge(item);
+        entityManager.merge(user);
         eTrans.commit();
         entityManager.close();
     }
-
 }
