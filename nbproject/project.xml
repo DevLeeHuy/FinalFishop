@@ -15,11 +15,6 @@
                     <path-in-war>WEB-INF/lib</path-in-war>
                 </library>
                 <library dirs="200">
-<<<<<<< HEAD
-                    <file>${libs.javaee-api-7.0.classpath}</file>
-=======
-                    <file>${libs.javaee-web-api-7.0.classpath}</file>
->>>>>>> 5b8bc466071bc38f5c73d13c14d6a43b7a12e788
                     <path-in-war>WEB-INF/lib</path-in-war>
                 </library>
             </web-module-libraries>
